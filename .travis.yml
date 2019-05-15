@@ -5,6 +5,11 @@ node_js:
 cache:
   directories:
     - node_modules
+install:
+  - npm install -g codecov
+
 script:
-    - sh ./deploy.sh
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - codecov
+  - sh ./deploy.sh
 branch: dev
