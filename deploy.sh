@@ -13,6 +13,6 @@ git commit -m 'deploy'
 git config --local user.name "chaichai"
 git config --local user.email "davecqx@gmail.com"
 
-git push -f https://${access_token}@github.com/caicaishmily.github.io master
+git push -f https://${access_token}@github.com/caicaishmily/caicaishmily.github.io master
 
 cd -
