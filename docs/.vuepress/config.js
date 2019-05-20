@@ -8,12 +8,21 @@ module.exports = {
       { text: '书籍', link: '/book/' },
       { text: 'Github', link: 'https://github.com/caicaishmily' },
     ],
-    search: false,
-    sidebar: {
-      '/tech/': [
-        '',     /* /foo/ */
-        'flutter',  /* /foo/one.html */
-      ],
-    }
+    sidebar: [
+      {
+        title: 'Home',
+        children: [
+          '/'
+        ]
+      },
+      {
+        title: 'Tech',
+        children: [ '/tech/' ]
+      },
+      {
+        title: 'Book',
+        children: [ '/book/' ]
+      }
+    ]
   }
 }

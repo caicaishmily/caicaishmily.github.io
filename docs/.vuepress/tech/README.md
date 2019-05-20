@@ -1,1 +1,1 @@
-# [Flutter](/tech/flutter.md)
+# [Flutter](/flutter.md)
